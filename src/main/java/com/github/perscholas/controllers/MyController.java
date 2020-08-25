@@ -2,6 +2,7 @@ package com.github.perscholas.controllers;
 
 import com.github.perscholas.services.MyService;
 import com.github.perscholas.models.MyModel;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 public class MyController {
     private MyService service;
 
+    @Autowired
     public MyController(MyService service) {
         this.service = service;
     }

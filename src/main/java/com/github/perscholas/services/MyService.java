@@ -2,7 +2,9 @@ package com.github.perscholas.services;
 
 import com.github.perscholas.repositories.MyRepository;
 import com.github.perscholas.models.MyModel;
+import org.springframework.stereotype.Service;
 
+@Service
 public class MyService {
     private MyRepository repository;
 
